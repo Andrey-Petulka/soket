@@ -1,5 +1,5 @@
 !function(){
-    var ws = new WebSocket('wss://websocket-echo.com/');
+    var ws = new WebSocket('wss://websocket-echo.com');
 
     ws.onopen = function(){
         console.log("Соединение установлено")

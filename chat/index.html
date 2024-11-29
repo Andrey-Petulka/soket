@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 <body>
+    <div id="wrapper">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">MySimpleChat</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" id="client-name" placeholder="Search" aria-label="Search">
+                  <input class="form-control me-2" type="search" id="client-img"placeholder="URL аватарки" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Сохранить настройки</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-fixed-bottom">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">MySimpleChat</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" onclick="event.preventDefault()" id="client-message" placeholder="Сообщение" aria-label="Search">
+                  <button class="btn btn-outline-success" onclick="event.preventDefault()" id="send" type="submit">Отправить</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <main id="chat">
+        <div class="message">
+            <img src="" alt="" class="image">
+        </div>
+    </main>
+    <script src="chat.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="client.js"></script>
     <script>
         console.log("ппп")
